@@ -2,10 +2,11 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') { //test edit
+        stage('Build') {
             steps {
                 echo 'Task: Compile and package the application'
-                echo 'Tool: Maven'
+                //echo 'Tool: Maven'
+		echo 'Tool: Gradle'
             }
         }
 
