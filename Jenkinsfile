@@ -4,9 +4,9 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+		sleep(5)
                 echo 'Task: Compile and package the application'
-                //echo 'Tool: Maven'
-		echo 'Tool: Gradle'
+                echo 'Tool: Maven'
             }
         }
 
